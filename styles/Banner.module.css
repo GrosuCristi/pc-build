@@ -1,0 +1,51 @@
+.banner {
+  width: 100vw;
+  height: calc(100vh - 60px);
+  overflow: hidden;
+  position: relative;
+}
+
+.banner img {
+  filter: contrast(120%) brightness(60%);
+}
+
+.banner h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  color: #ffffff;
+  z-index: 2;
+  font-size: 4rem;
+  max-width: 750px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.banner span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--foreground);
+  font-size: 2rem;
+  animation: mouse 3s infinite;
+}
+
+@keyframes mouse {
+  0% {
+    bottom: 60px;
+    opacity: 0;
+  }
+  35% {
+    bottom: 40px;
+    opacity: 1;
+  }
+  50% {
+    bottom: 20px;
+    opacity: 0;
+  }
+
+  60%, 100% {
+    opacity: 0;
+  }
+}

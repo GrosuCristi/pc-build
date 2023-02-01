@@ -1,0 +1,52 @@
+.cardContainer {
+  grid-column: 2 / span 12;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(auto, 100px));
+  grid-gap: 40px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.card {
+  grid-column-end: span 4;
+  overflow: hidden;
+  position: relative;
+  height: fit-content;
+  padding: 20px;
+  border: 1px solid #d3d3d3;
+  cursor: pointer;
+  transition: transform 0.25s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/4;
+}
+
+.image img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.name {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.price {
+  display: block;
+  color: red;
+  font-weight: 700;
+  font-size: 2rem;
+}

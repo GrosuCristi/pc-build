@@ -1,0 +1,44 @@
+.header {
+  background-color: var(--background);
+  height: 60px;
+}
+
+.container {
+  max-width: var(--max-width);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.logo {
+  margin: 0;
+  color: var(--foreground);
+}
+
+.navigation {
+  color: var(--foreground);
+  display: flex;
+  align-items: center;
+}
+
+.navigation span {
+  cursor: pointer;
+  display: block;
+}
+
+.navigation span:hover {
+  color: var(--primary);
+}
+
+.navigation span:not(:last-child) {
+  padding: 20px;
+}
+
+.navigation span:last-child {
+  margin-left: 10px;
+}
