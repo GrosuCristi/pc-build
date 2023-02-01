@@ -8,6 +8,7 @@ export default function Header (props) {
         <nav className={styles.navigation}>
           <span>Home</span>
           <span>Our builds</span>
+          <span>Overclocking</span>
           <span>Contact</span>
           <span>About</span>
           <span>
